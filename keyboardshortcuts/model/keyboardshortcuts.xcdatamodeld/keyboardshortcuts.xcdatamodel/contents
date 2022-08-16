@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G72" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="KeyboardShortcut" representedClassName="KeyboardShortcut" syncable="YES" codeGenerationType="class">
+        <attribute name="application" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="shortcut" attributeType="String"/>
+        <attribute name="shortcutDescription" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="KeyboardShortcut" positionX="-63" positionY="-18" width="128" height="89"/>
+    </elements>
+</model>

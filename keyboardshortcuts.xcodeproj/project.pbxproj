@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F37E4D2F28AAE81000431720 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E4D2E28AAE81000431720 /* DataController.swift */; };
 		F3D53E4D289E239A00A9F007 /* keyboardshortcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E4C289E239A00A9F007 /* keyboardshortcutsApp.swift */; };
 		F3D53E4F289E239A00A9F007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E4E289E239A00A9F007 /* ContentView.swift */; };
 		F3D53E51289E239A00A9F007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D53E50289E239A00A9F007 /* Assets.xcassets */; };
 		F3D53E54289E239A00A9F007 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D53E53289E239A00A9F007 /* Preview Assets.xcassets */; };
-		F3D53E56289E239A00A9F007 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E55289E239A00A9F007 /* Persistence.swift */; };
 		F3D53E59289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E57289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld */; };
 		F3D53E64289E239B00A9F007 /* keyboardshortcutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E63289E239B00A9F007 /* keyboardshortcutsTests.swift */; };
 		F3D53E6E289E239B00A9F007 /* keyboardshortcutsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E6D289E239B00A9F007 /* keyboardshortcutsUITests.swift */; };
 		F3D53E70289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E6F289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift */; };
+		F3DCA69F28AAF4F000C49992 /* NewShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCA69E28AAF4F000C49992 /* NewShortcutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F37E4D2E28AAE81000431720 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F3D53E49289E239A00A9F007 /* keyboardshortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyboardshortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D53E4C289E239A00A9F007 /* keyboardshortcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardshortcutsApp.swift; sourceTree = "<group>"; };
 		F3D53E4E289E239A00A9F007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3D53E50289E239A00A9F007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3D53E53289E239A00A9F007 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F3D53E55289E239A00A9F007 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F3D53E58289E239A00A9F007 /* keyboardshortcuts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = keyboardshortcuts.xcdatamodel; sourceTree = "<group>"; };
 		F3D53E5A289E239A00A9F007 /* keyboardshortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboardshortcuts.entitlements; sourceTree = "<group>"; };
 		F3D53E5F289E239B00A9F007 /* keyboardshortcutsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keyboardshortcutsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +50,7 @@
 		F3D53E69289E239B00A9F007 /* keyboardshortcutsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keyboardshortcutsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D53E6D289E239B00A9F007 /* keyboardshortcutsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardshortcutsUITests.swift; sourceTree = "<group>"; };
 		F3D53E6F289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardshortcutsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3DCA69E28AAF4F000C49992 /* NewShortcutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShortcutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,11 @@
 		F3D53E4B289E239A00A9F007 /* keyboardshortcuts */ = {
 			isa = PBXGroup;
 			children = (
+				F3DCA6A128AB080C00C49992 /* model */,
+				F3DCA6A028AAF50500C49992 /* views */,
 				F3D53E4C289E239A00A9F007 /* keyboardshortcutsApp.swift */,
-				F3D53E4E289E239A00A9F007 /* ContentView.swift */,
 				F3D53E50289E239A00A9F007 /* Assets.xcassets */,
-				F3D53E55289E239A00A9F007 /* Persistence.swift */,
 				F3D53E5A289E239A00A9F007 /* keyboardshortcuts.entitlements */,
-				F3D53E57289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld */,
 				F3D53E52289E239A00A9F007 /* Preview Content */,
 			);
 			path = keyboardshortcuts;
@@ -133,6 +134,24 @@
 				F3D53E6F289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift */,
 			);
 			path = keyboardshortcutsUITests;
+			sourceTree = "<group>";
+		};
+		F3DCA6A028AAF50500C49992 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F3D53E4E289E239A00A9F007 /* ContentView.swift */,
+				F3DCA69E28AAF4F000C49992 /* NewShortcutView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F3DCA6A128AB080C00C49992 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F37E4D2E28AAE81000431720 /* DataController.swift */,
+				F3D53E57289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D53E56289E239A00A9F007 /* Persistence.swift in Sources */,
+				F37E4D2F28AAE81000431720 /* DataController.swift in Sources */,
 				F3D53E4F289E239A00A9F007 /* ContentView.swift in Sources */,
+				F3DCA69F28AAF4F000C49992 /* NewShortcutView.swift in Sources */,
 				F3D53E59289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld in Sources */,
 				F3D53E4D289E239A00A9F007 /* keyboardshortcutsApp.swift in Sources */,
 			);
