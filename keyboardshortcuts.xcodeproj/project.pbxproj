@@ -7,68 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F37E4D2F28AAE81000431720 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E4D2E28AAE81000431720 /* DataController.swift */; };
-		F3D53E4D289E239A00A9F007 /* keyboardshortcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E4C289E239A00A9F007 /* keyboardshortcutsApp.swift */; };
-		F3D53E4F289E239A00A9F007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E4E289E239A00A9F007 /* ContentView.swift */; };
-		F3D53E51289E239A00A9F007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D53E50289E239A00A9F007 /* Assets.xcassets */; };
-		F3D53E54289E239A00A9F007 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D53E53289E239A00A9F007 /* Preview Assets.xcassets */; };
-		F3D53E59289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E57289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld */; };
-		F3D53E64289E239B00A9F007 /* keyboardshortcutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E63289E239B00A9F007 /* keyboardshortcutsTests.swift */; };
-		F3D53E6E289E239B00A9F007 /* keyboardshortcutsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E6D289E239B00A9F007 /* keyboardshortcutsUITests.swift */; };
-		F3D53E70289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D53E6F289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift */; };
-		F3DCA69F28AAF4F000C49992 /* NewShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCA69E28AAF4F000C49992 /* NewShortcutView.swift */; };
+		F385D8B828D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F385D8B628D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld */; };
+		F385D8BB28D8F42400502B8F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D8BA28D8F42400502B8F /* DataController.swift */; };
+		F385D8BE28D8F50600502B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D8BD28D8F50600502B8F /* ContentView.swift */; };
+		F385D8C228D9511200502B8F /* NewShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D8C128D9511200502B8F /* NewShortcutView.swift */; };
+		F3DDE99928C702A300D4F220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDE99828C702A300D4F220 /* AppDelegate.swift */; };
+		F3DDE99B28C702A300D4F220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDE99A28C702A300D4F220 /* ViewController.swift */; };
+		F3DDE99D28C702A500D4F220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DDE99C28C702A500D4F220 /* Assets.xcassets */; };
+		F3DDE9A028C702A500D4F220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DDE99E28C702A500D4F220 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F3D53E60289E239B00A9F007 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3D53E41289E239A00A9F007 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3D53E48289E239A00A9F007;
-			remoteInfo = keyboardshortcuts;
-		};
-		F3D53E6A289E239B00A9F007 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3D53E41289E239A00A9F007 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3D53E48289E239A00A9F007;
-			remoteInfo = keyboardshortcuts;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		F37E4D2E28AAE81000431720 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		F3D53E49289E239A00A9F007 /* keyboardshortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyboardshortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D53E4C289E239A00A9F007 /* keyboardshortcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardshortcutsApp.swift; sourceTree = "<group>"; };
-		F3D53E4E289E239A00A9F007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F3D53E50289E239A00A9F007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3D53E53289E239A00A9F007 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F3D53E58289E239A00A9F007 /* keyboardshortcuts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = keyboardshortcuts.xcdatamodel; sourceTree = "<group>"; };
-		F3D53E5A289E239A00A9F007 /* keyboardshortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboardshortcuts.entitlements; sourceTree = "<group>"; };
-		F3D53E5F289E239B00A9F007 /* keyboardshortcutsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keyboardshortcutsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D53E63289E239B00A9F007 /* keyboardshortcutsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardshortcutsTests.swift; sourceTree = "<group>"; };
-		F3D53E69289E239B00A9F007 /* keyboardshortcutsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keyboardshortcutsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D53E6D289E239B00A9F007 /* keyboardshortcutsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardshortcutsUITests.swift; sourceTree = "<group>"; };
-		F3D53E6F289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardshortcutsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F3DCA69E28AAF4F000C49992 /* NewShortcutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShortcutView.swift; sourceTree = "<group>"; };
+		F385D8B728D8F39A00502B8F /* keyboardshortcuts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = keyboardshortcuts.xcdatamodel; sourceTree = "<group>"; };
+		F385D8BA28D8F42400502B8F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F385D8BD28D8F50600502B8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F385D8C128D9511200502B8F /* NewShortcutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShortcutView.swift; sourceTree = "<group>"; };
+		F3D563C028C7064100F9BB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3DDE99528C702A300D4F220 /* keyboardShortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyboardShortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DDE99828C702A300D4F220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3DDE99A28C702A300D4F220 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3DDE99C28C702A500D4F220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3DDE99F28C702A500D4F220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3DDE9A128C702A500D4F220 /* keyboardShortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboardShortcuts.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F3D53E46289E239A00A9F007 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3D53E5C289E239B00A9F007 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3D53E66289E239B00A9F007 /* Frameworks */ = {
+		F3DDE99228C702A300D4F220 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,162 +42,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3D53E40289E239A00A9F007 = {
+		F385D8B928D8F3A300502B8F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F3D53E4B289E239A00A9F007 /* keyboardshortcuts */,
-				F3D53E62289E239B00A9F007 /* keyboardshortcutsTests */,
-				F3D53E6C289E239B00A9F007 /* keyboardshortcutsUITests */,
-				F3D53E4A289E239A00A9F007 /* Products */,
+				F385D8B628D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld */,
+				F385D8BA28D8F42400502B8F /* DataController.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F385D8BC28D8F4ED00502B8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F385D8BD28D8F50600502B8F /* ContentView.swift */,
+				F385D8C128D9511200502B8F /* NewShortcutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3DDE98C28C702A300D4F220 = {
+			isa = PBXGroup;
+			children = (
+				F3DDE99728C702A300D4F220 /* keyboardShortcuts */,
+				F3DDE99628C702A300D4F220 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F3D53E4A289E239A00A9F007 /* Products */ = {
+		F3DDE99628C702A300D4F220 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3D53E49289E239A00A9F007 /* keyboardshortcuts.app */,
-				F3D53E5F289E239B00A9F007 /* keyboardshortcutsTests.xctest */,
-				F3D53E69289E239B00A9F007 /* keyboardshortcutsUITests.xctest */,
+				F3DDE99528C702A300D4F220 /* keyboardShortcuts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F3D53E4B289E239A00A9F007 /* keyboardshortcuts */ = {
+		F3DDE99728C702A300D4F220 /* keyboardShortcuts */ = {
 			isa = PBXGroup;
 			children = (
-				F3DCA6A128AB080C00C49992 /* model */,
-				F3DCA6A028AAF50500C49992 /* views */,
-				F3D53E4C289E239A00A9F007 /* keyboardshortcutsApp.swift */,
-				F3D53E50289E239A00A9F007 /* Assets.xcassets */,
-				F3D53E5A289E239A00A9F007 /* keyboardshortcuts.entitlements */,
-				F3D53E52289E239A00A9F007 /* Preview Content */,
+				F385D8BC28D8F4ED00502B8F /* Views */,
+				F385D8B928D8F3A300502B8F /* model */,
+				F3D563C028C7064100F9BB67 /* Info.plist */,
+				F3DDE99828C702A300D4F220 /* AppDelegate.swift */,
+				F3DDE99A28C702A300D4F220 /* ViewController.swift */,
+				F3DDE99C28C702A500D4F220 /* Assets.xcassets */,
+				F3DDE99E28C702A500D4F220 /* Main.storyboard */,
+				F3DDE9A128C702A500D4F220 /* keyboardShortcuts.entitlements */,
 			);
-			path = keyboardshortcuts;
-			sourceTree = "<group>";
-		};
-		F3D53E52289E239A00A9F007 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F3D53E53289E239A00A9F007 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F3D53E62289E239B00A9F007 /* keyboardshortcutsTests */ = {
-			isa = PBXGroup;
-			children = (
-				F3D53E63289E239B00A9F007 /* keyboardshortcutsTests.swift */,
-			);
-			path = keyboardshortcutsTests;
-			sourceTree = "<group>";
-		};
-		F3D53E6C289E239B00A9F007 /* keyboardshortcutsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F3D53E6D289E239B00A9F007 /* keyboardshortcutsUITests.swift */,
-				F3D53E6F289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift */,
-			);
-			path = keyboardshortcutsUITests;
-			sourceTree = "<group>";
-		};
-		F3DCA6A028AAF50500C49992 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				F3D53E4E289E239A00A9F007 /* ContentView.swift */,
-				F3DCA69E28AAF4F000C49992 /* NewShortcutView.swift */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		F3DCA6A128AB080C00C49992 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				F37E4D2E28AAE81000431720 /* DataController.swift */,
-				F3D53E57289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld */,
-			);
-			path = model;
+			path = keyboardShortcuts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F3D53E48289E239A00A9F007 /* keyboardshortcuts */ = {
+		F3DDE99428C702A300D4F220 /* keyboardShortcuts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3D53E73289E239B00A9F007 /* Build configuration list for PBXNativeTarget "keyboardshortcuts" */;
+			buildConfigurationList = F3DDE9A428C702A500D4F220 /* Build configuration list for PBXNativeTarget "keyboardShortcuts" */;
 			buildPhases = (
-				F3D53E45289E239A00A9F007 /* Sources */,
-				F3D53E46289E239A00A9F007 /* Frameworks */,
-				F3D53E47289E239A00A9F007 /* Resources */,
+				F3DDE99128C702A300D4F220 /* Sources */,
+				F3DDE99228C702A300D4F220 /* Frameworks */,
+				F3DDE99328C702A300D4F220 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = keyboardshortcuts;
-			productName = keyboardshortcuts;
-			productReference = F3D53E49289E239A00A9F007 /* keyboardshortcuts.app */;
+			name = keyboardShortcuts;
+			productName = keyboardShortcuts;
+			productReference = F3DDE99528C702A300D4F220 /* keyboardShortcuts.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F3D53E5E289E239B00A9F007 /* keyboardshortcutsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3D53E76289E239B00A9F007 /* Build configuration list for PBXNativeTarget "keyboardshortcutsTests" */;
-			buildPhases = (
-				F3D53E5B289E239B00A9F007 /* Sources */,
-				F3D53E5C289E239B00A9F007 /* Frameworks */,
-				F3D53E5D289E239B00A9F007 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3D53E61289E239B00A9F007 /* PBXTargetDependency */,
-			);
-			name = keyboardshortcutsTests;
-			productName = keyboardshortcutsTests;
-			productReference = F3D53E5F289E239B00A9F007 /* keyboardshortcutsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F3D53E68289E239B00A9F007 /* keyboardshortcutsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3D53E79289E239B00A9F007 /* Build configuration list for PBXNativeTarget "keyboardshortcutsUITests" */;
-			buildPhases = (
-				F3D53E65289E239B00A9F007 /* Sources */,
-				F3D53E66289E239B00A9F007 /* Frameworks */,
-				F3D53E67289E239B00A9F007 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3D53E6B289E239B00A9F007 /* PBXTargetDependency */,
-			);
-			name = keyboardshortcutsUITests;
-			productName = keyboardshortcutsUITests;
-			productReference = F3D53E69289E239B00A9F007 /* keyboardshortcutsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F3D53E41289E239A00A9F007 /* Project object */ = {
+		F3DDE98D28C702A300D4F220 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					F3D53E48289E239A00A9F007 = {
+					F3DDE99428C702A300D4F220 = {
 						CreatedOnToolsVersion = 13.4;
-					};
-					F3D53E5E289E239B00A9F007 = {
-						CreatedOnToolsVersion = 13.4;
-						TestTargetID = F3D53E48289E239A00A9F007;
-					};
-					F3D53E68289E239B00A9F007 = {
-						CreatedOnToolsVersion = 13.4;
-						TestTargetID = F3D53E48289E239A00A9F007;
 					};
 				};
 			};
-			buildConfigurationList = F3D53E44289E239A00A9F007 /* Build configuration list for PBXProject "keyboardshortcuts" */;
+			buildConfigurationList = F3DDE99028C702A300D4F220 /* Build configuration list for PBXProject "keyboardShortcuts" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,91 +134,57 @@
 				en,
 				Base,
 			);
-			mainGroup = F3D53E40289E239A00A9F007;
-			productRefGroup = F3D53E4A289E239A00A9F007 /* Products */;
+			mainGroup = F3DDE98C28C702A300D4F220;
+			productRefGroup = F3DDE99628C702A300D4F220 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3D53E48289E239A00A9F007 /* keyboardshortcuts */,
-				F3D53E5E289E239B00A9F007 /* keyboardshortcutsTests */,
-				F3D53E68289E239B00A9F007 /* keyboardshortcutsUITests */,
+				F3DDE99428C702A300D4F220 /* keyboardShortcuts */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F3D53E47289E239A00A9F007 /* Resources */ = {
+		F3DDE99328C702A300D4F220 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D53E54289E239A00A9F007 /* Preview Assets.xcassets in Resources */,
-				F3D53E51289E239A00A9F007 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3D53E5D289E239B00A9F007 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3D53E67289E239B00A9F007 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F3DDE99D28C702A500D4F220 /* Assets.xcassets in Resources */,
+				F3DDE9A028C702A500D4F220 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F3D53E45289E239A00A9F007 /* Sources */ = {
+		F3DDE99128C702A300D4F220 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F37E4D2F28AAE81000431720 /* DataController.swift in Sources */,
-				F3D53E4F289E239A00A9F007 /* ContentView.swift in Sources */,
-				F3DCA69F28AAF4F000C49992 /* NewShortcutView.swift in Sources */,
-				F3D53E59289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld in Sources */,
-				F3D53E4D289E239A00A9F007 /* keyboardshortcutsApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3D53E5B289E239B00A9F007 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3D53E64289E239B00A9F007 /* keyboardshortcutsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3D53E65289E239B00A9F007 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3D53E6E289E239B00A9F007 /* keyboardshortcutsUITests.swift in Sources */,
-				F3D53E70289E239B00A9F007 /* keyboardshortcutsUITestsLaunchTests.swift in Sources */,
+				F3DDE99B28C702A300D4F220 /* ViewController.swift in Sources */,
+				F385D8BE28D8F50600502B8F /* ContentView.swift in Sources */,
+				F385D8BB28D8F42400502B8F /* DataController.swift in Sources */,
+				F385D8C228D9511200502B8F /* NewShortcutView.swift in Sources */,
+				F385D8B828D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld in Sources */,
+				F3DDE99928C702A300D4F220 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		F3D53E61289E239B00A9F007 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3D53E48289E239A00A9F007 /* keyboardshortcuts */;
-			targetProxy = F3D53E60289E239B00A9F007 /* PBXContainerItemProxy */;
+/* Begin PBXVariantGroup section */
+		F3DDE99E28C702A500D4F220 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3DDE99F28C702A500D4F220 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
 		};
-		F3D53E6B289E239B00A9F007 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3D53E48289E239A00A9F007 /* keyboardshortcuts */;
-			targetProxy = F3D53E6A289E239B00A9F007 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F3D53E71289E239B00A9F007 /* Debug */ = {
+		F3DDE9A228C702A500D4F220 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -385,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		F3D53E72289E239B00A9F007 /* Release */ = {
+		F3DDE9A328C702A500D4F220 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -438,167 +297,79 @@
 			};
 			name = Release;
 		};
-		F3D53E74289E239B00A9F007 /* Debug */ = {
+		F3DDE9A528C702A500D4F220 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = keyboardshortcuts/keyboardshortcuts.entitlements;
+				CODE_SIGN_ENTITLEMENTS = keyboardShortcuts/keyboardShortcuts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"keyboardshortcuts/Preview Content\"";
 				DEVELOPMENT_TEAM = 7592C9QMAG;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = keyboardShortcuts/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardshortcuts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardShortcuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		F3D53E75289E239B00A9F007 /* Release */ = {
+		F3DDE9A628C702A500D4F220 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = keyboardshortcuts/keyboardshortcuts.entitlements;
+				CODE_SIGN_ENTITLEMENTS = keyboardShortcuts/keyboardShortcuts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"keyboardshortcuts/Preview Content\"";
 				DEVELOPMENT_TEAM = 7592C9QMAG;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = keyboardShortcuts/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardshortcuts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardShortcuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		F3D53E77289E239B00A9F007 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7592C9QMAG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardshortcutsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/keyboardshortcuts.app/Contents/MacOS/keyboardshortcuts";
-			};
-			name = Debug;
-		};
-		F3D53E78289E239B00A9F007 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7592C9QMAG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardshortcutsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/keyboardshortcuts.app/Contents/MacOS/keyboardshortcuts";
-			};
-			name = Release;
-		};
-		F3D53E7A289E239B00A9F007 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7592C9QMAG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardshortcutsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = keyboardshortcuts;
-			};
-			name = Debug;
-		};
-		F3D53E7B289E239B00A9F007 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7592C9QMAG;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardshortcutsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = keyboardshortcuts;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F3D53E44289E239A00A9F007 /* Build configuration list for PBXProject "keyboardshortcuts" */ = {
+		F3DDE99028C702A300D4F220 /* Build configuration list for PBXProject "keyboardShortcuts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3D53E71289E239B00A9F007 /* Debug */,
-				F3D53E72289E239B00A9F007 /* Release */,
+				F3DDE9A228C702A500D4F220 /* Debug */,
+				F3DDE9A328C702A500D4F220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3D53E73289E239B00A9F007 /* Build configuration list for PBXNativeTarget "keyboardshortcuts" */ = {
+		F3DDE9A428C702A500D4F220 /* Build configuration list for PBXNativeTarget "keyboardShortcuts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3D53E74289E239B00A9F007 /* Debug */,
-				F3D53E75289E239B00A9F007 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3D53E76289E239B00A9F007 /* Build configuration list for PBXNativeTarget "keyboardshortcutsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3D53E77289E239B00A9F007 /* Debug */,
-				F3D53E78289E239B00A9F007 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3D53E79289E239B00A9F007 /* Build configuration list for PBXNativeTarget "keyboardshortcutsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3D53E7A289E239B00A9F007 /* Debug */,
-				F3D53E7B289E239B00A9F007 /* Release */,
+				F3DDE9A528C702A500D4F220 /* Debug */,
+				F3DDE9A628C702A500D4F220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -606,17 +377,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F3D53E57289E239A00A9F007 /* keyboardshortcuts.xcdatamodeld */ = {
+		F385D8B628D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F3D53E58289E239A00A9F007 /* keyboardshortcuts.xcdatamodel */,
+				F385D8B728D8F39A00502B8F /* keyboardshortcuts.xcdatamodel */,
 			);
-			currentVersion = F3D53E58289E239A00A9F007 /* keyboardshortcuts.xcdatamodel */;
+			currentVersion = F385D8B728D8F39A00502B8F /* keyboardshortcuts.xcdatamodel */;
 			path = keyboardshortcuts.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = F3D53E41289E239A00A9F007 /* Project object */;
+	rootObject = F3DDE98D28C702A300D4F220 /* Project object */;
 }

@@ -6,49 +6,47 @@
 //
 
 import SwiftUI
-
-
-
+import Combine
 
 struct NewShortcutView: View {
 	@Environment(\.managedObjectContext) private var viewContext
 	@Environment(\.presentationMode) private var presentationMode
 	
-	@State private var shortcutDescription: String = ""
+	@State private var details: String = ""
 	@State private var application: String = ""
 	@State private var shortcut: String = ""
 	
-    var body: some View {
+	var body: some View {
 		Form {
-			TextField("Description", text: $shortcutDescription)
-			TextField("Application", text: $application)
+			
 			TextField("Shortcut", text: $shortcut)
-				.onSubmit {
-					
-				}
-			HStack {
-				ForEach(specialSymbols, id: \.id) { specialSymbol in
-					Button(specialSymbol.title) {
-						appendToShortcut(specialSymbol.symbol)
-					}
-				}
-			}
-			HStack {
-				Spacer()
+				.lineLimit(1)
+			TextField("Details", text: $details)
+				.lineLimit(nil)
+			TextField("Application", text: $application)
+				.lineLimit(1)
+//			HStack {
+//				ForEach(specialSymbols, id: \.id) { specialSymbol in
+//					Button(specialSymbol.title) {
+//						appendToShortcut(specialSymbol.symbol)
+//					}
+//				}
+//			}
+//			HStack {
+//				Spacer()
 				Button("Add") {
 					saveKeyboardShortcut()
 				}
 				.disabled(disableAdd)
-			}
-			.padding([.top, .bottom])
+//			}
+//			.padding([.top, .bottom])
 		}
-		.onChange(of: shortcut, perform: { newValue in
-		})
+		.textFieldStyle(.roundedBorder)
 		.padding()
-    }
+	}
 	
 	private var disableAdd: Bool {
-		return shortcutDescription == "" || application == "" || shortcut == ""
+		return details == "" || application == "" || shortcut == ""
 	}
 	
 	private func appendToShortcut(_ value: String) {
@@ -65,7 +63,7 @@ struct NewShortcutView: View {
 	private func saveKeyboardShortcut() {
 		let keyboardShortcut = KeyboardShortcut(context: viewContext)
 		keyboardShortcut.id = UUID()
-		keyboardShortcut.shortcutDescription = shortcutDescription
+		keyboardShortcut.details = details
 		keyboardShortcut.application = application
 		keyboardShortcut.shortcut = shortcut
 		
@@ -97,7 +95,7 @@ fileprivate let specialSymbols: [SpecialSymbol] = [
 	
 
 struct NewShortcutView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewShortcutView().environment(\.managedObjectContext, DataController.preview.container.viewContext)
-    }
+	static var previews: some View {
+		NewShortcutView().environment(\.managedObjectContext, DataController.preview.container.viewContext)
+	}
 }

@@ -27,7 +27,7 @@ class DataController: ObservableObject {
 		let viewContext = result.container.viewContext
 		for index in 0..<10 {
 			let newShortcut = KeyboardShortcut(context: viewContext)
-			newShortcut.shortcutDescription = "My shortcut \(index)"
+			newShortcut.details = "My shortcut \(index)"
 			newShortcut.id = UUID()
 			newShortcut.application = "testApp"
 			newShortcut.shortcut = "CMD + D"
