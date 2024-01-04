@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F385D8B828D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F385D8B628D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld */; };
-		F385D8BB28D8F42400502B8F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D8BA28D8F42400502B8F /* DataController.swift */; };
+		F33E6AA22B466D280005CCD6 /* KeyboardShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E6AA12B466D280005CCD6 /* KeyboardShortcut.swift */; };
 		F385D8BE28D8F50600502B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D8BD28D8F50600502B8F /* ContentView.swift */; };
 		F385D8C228D9511200502B8F /* NewShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D8C128D9511200502B8F /* NewShortcutView.swift */; };
 		F3DDE99928C702A300D4F220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDE99828C702A300D4F220 /* AppDelegate.swift */; };
@@ -18,8 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F385D8B728D8F39A00502B8F /* keyboardshortcuts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = keyboardshortcuts.xcdatamodel; sourceTree = "<group>"; };
-		F385D8BA28D8F42400502B8F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F33E6AA12B466D280005CCD6 /* KeyboardShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyboardShortcut.swift; path = keyboardshortcuts/model/KeyboardShortcut.swift; sourceTree = SOURCE_ROOT; };
 		F385D8BD28D8F50600502B8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F385D8C128D9511200502B8F /* NewShortcutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShortcutView.swift; sourceTree = "<group>"; };
 		F3D563C028C7064100F9BB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -45,8 +43,7 @@
 		F385D8B928D8F3A300502B8F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F385D8B628D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld */,
-				F385D8BA28D8F42400502B8F /* DataController.swift */,
+				F33E6AA12B466D280005CCD6 /* KeyboardShortcut.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -126,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F3DDE99028C702A300D4F220 /* Build configuration list for PBXProject "keyboardShortcuts" */;
+			buildConfigurationList = F3DDE99028C702A300D4F220 /* Build configuration list for PBXProject "keyboardshortcuts" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -162,10 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3DDE99B28C702A300D4F220 /* ViewController.swift in Sources */,
+				F33E6AA22B466D280005CCD6 /* KeyboardShortcut.swift in Sources */,
 				F385D8BE28D8F50600502B8F /* ContentView.swift in Sources */,
-				F385D8BB28D8F42400502B8F /* DataController.swift in Sources */,
 				F385D8C228D9511200502B8F /* NewShortcutView.swift in Sources */,
-				F385D8B828D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld in Sources */,
 				F3DDE99928C702A300D4F220 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,7 +230,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -288,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -317,6 +313,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardShortcuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,6 +342,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boswell.keyboardShortcuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F3DDE99028C702A300D4F220 /* Build configuration list for PBXProject "keyboardShortcuts" */ = {
+		F3DDE99028C702A300D4F220 /* Build configuration list for PBXProject "keyboardshortcuts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3DDE9A228C702A500D4F220 /* Debug */,
@@ -375,19 +373,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F385D8B628D8F39A00502B8F /* keyboardshortcuts.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F385D8B728D8F39A00502B8F /* keyboardshortcuts.xcdatamodel */,
-			);
-			currentVersion = F385D8B728D8F39A00502B8F /* keyboardshortcuts.xcdatamodel */;
-			path = keyboardshortcuts.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F3DDE98D28C702A300D4F220 /* Project object */;
 }

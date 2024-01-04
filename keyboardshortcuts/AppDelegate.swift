@@ -24,6 +24,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		popover.contentViewController = ContentViewController.newInstance()
 		popover.animates = true
 //		popover.contentSize = CGSize(width: 300, height: 300)
+		NotificationCenter.default.addObserver(forName: NSWindow.didResignKeyNotification, object: nil, queue: nil) { notification in
+			self.popover.performClose(self.statusBarItem)
+		}
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {

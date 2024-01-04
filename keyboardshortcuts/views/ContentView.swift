@@ -7,28 +7,35 @@
 
 import SwiftUI
 import CoreData
+import SwiftData
 
 struct ContentView: View {
-	
-	@StateObject private var dataController = DataController()
+	var sharedModelContainer: ModelContainer = {
+		let schema = Schema([
+			KeyboardShortcut.self,
+		])
+		let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+		
+		do {
+			return try ModelContainer(for: schema, configurations: [modelConfiguration])
+		} catch {
+			fatalError("Could not create ModelContainer: \(error)")
+		}
+	}()
 	
 	var body: some View {
 			InternalContentView()
-				.environment(\.managedObjectContext, dataController.container.viewContext)
+			.modelContainer(sharedModelContainer)
 		.padding()
 	}
 }
 
 fileprivate struct InternalContentView: View {
-	@Environment(\.managedObjectContext) private var viewContext
-
-	@FetchRequest(
-		sortDescriptors: [NSSortDescriptor(keyPath: \KeyboardShortcut.application, ascending: true)],
-		animation: .default)
-	private var shortcuts: FetchedResults<KeyboardShortcut>
+	@Environment(\.modelContext) private var modelContext
+	@Query private var shortcuts: [KeyboardShortcut]
 	
 	@State private var isPresentingAddView = false
-	@State private var selectedKeyboardShortcut: KeyboardShortcut.ID? = nil
+	@State private var selectedKeyboardShortcut: UUID? = nil
 	@State private var searchText = ""
 	
 	private var searchResults: [KeyboardShortcut] {
@@ -36,9 +43,8 @@ fileprivate struct InternalContentView: View {
 			return shortcuts.filter { _ in true }
 		} else {
 			return shortcuts.filter { shortcut in
-				let details = shortcut.details!.lowercased()
-				let application = shortcut.application!.lowercased()
-//				let shortcut = shortcut.shortcut!
+				let details = shortcut.details.lowercased()
+				let application = shortcut.application.lowercased()
 				let matchingText = searchText.lowercased()
 				return details.contains(matchingText) || application.contains(matchingText)
 			}
@@ -51,8 +57,14 @@ fileprivate struct InternalContentView: View {
 			HStack {
 				TextField(text: $searchText, prompt: Text("Search")) {}
 				Button {
-					if let keyboardShortcut = selectedKeyboardShortcut, let id = keyboardShortcut , let index = shortcuts.firstIndex(where: { shortcut in
-						shortcut.id == id
+					addItem()
+				} label: {
+					Text("adding a shortcut")
+				}
+
+				Button {
+					if let keyboardShortcut = selectedKeyboardShortcut, let index = shortcuts.firstIndex(where: { shortcut in
+						shortcut.id == keyboardShortcut
 					}) {
 						deleteItem(index: index)
 						selectedKeyboardShortcut = nil
@@ -72,11 +84,11 @@ fileprivate struct InternalContentView: View {
 				}
 			}	
 			Table(searchResults, selection: $selectedKeyboardShortcut) {
-					TableColumn("Details", value: \.details!)
+					TableColumn("Details", value: \.details)
 					.width(160)
-					TableColumn("Shorcut", value: \.shortcut!)
+					TableColumn("Shorcut", value: \.shortcut)
 					.width(75)
-					TableColumn("Application", value: \.application!)
+					TableColumn("Application", value: \.application)
 					.width(65)
 				}
 			.searchable(text: $searchText, prompt: "Search")
@@ -86,44 +98,20 @@ fileprivate struct InternalContentView: View {
 
 	private func addItem() {
 		withAnimation {
-			let newShortcut = KeyboardShortcut(context: viewContext)
-			newShortcut.details = "Does this work! + \(RAND_MAX / 5)"
-			newShortcut.shortcut = "⌘ + 5 + E"
-			newShortcut.id = UUID()
-			newShortcut.application = "onenote"
-
-			do {
-				try viewContext.save()
-			} catch {
-				// Replace this implementation with code to handle the error appropriately.
-				// fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-				let nsError = error as NSError
-				fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-			}
+			let newShortcut = KeyboardShortcut(application: "one note", details: "Does this work! + \(RAND_MAX / 5)", shortcut: "⌘ + 5 + E")
+			modelContext.insert(newShortcut)
 		}
 	}
 
 	private func deleteItem(index: Int) {
-		if shortcuts.count > 0 {
-			let offsets: IndexSet = IndexSet(integer: index)
-			withAnimation {
-				offsets.map { shortcuts[$0] }.forEach(viewContext.delete)
-
-				do {
-					try viewContext.save()
-				} catch {
-					// Replace this implementation with code to handle the error appropriately.
-					// fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-					let nsError = error as NSError
-					fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-				}
-			}
+		withAnimation {
+			modelContext.delete(shortcuts[index])
 		}
 	}
 }
 
-struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView().environment(\.managedObjectContext, DataController.preview.container.viewContext)
-	}
+#Preview {
+	InternalContentView()
+		.modelContainer(for: KeyboardShortcut.self, inMemory: true)
 }
+
