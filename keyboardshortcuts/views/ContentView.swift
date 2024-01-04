@@ -80,7 +80,7 @@ fileprivate struct InternalContentView: View {
 				}
 				.popover(isPresented: $isPresentingAddView, attachmentAnchor: .point(.trailing), arrowEdge: .trailing) {
 					NewShortcutView()
-						.frame(width: 350, height: 150)
+						.frame(minWidth: 350, minHeight: 150)
 				}
 			}	
 			Table(searchResults, selection: $selectedKeyboardShortcut) {

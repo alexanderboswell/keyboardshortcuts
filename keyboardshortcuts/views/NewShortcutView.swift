@@ -71,17 +71,17 @@ struct NewShortcutView: View {
 			MyTextField(text: $shortcut)
 //			TextField("Shortcut", text: $shortcut)
 //				.lineLimit(1)
-			TextField("Details", text: $details)
-				.lineLimit(nil)
-			TextField("Application", text: $application)
-				.lineLimit(1)
-			HStack {
+			VStack {
 				ForEach(specialSymbols, id: \.id) { specialSymbol in
 					Button(specialSymbol.title) {
 						appendToShortcut(specialSymbol.symbol)
 					}
 				}
 			}
+			TextField("Details", text: $details)
+				.lineLimit(nil)
+			TextField("Application", text: $application)
+				.lineLimit(1)
 			HStack {
 				Spacer()
 				Button("Add") {
